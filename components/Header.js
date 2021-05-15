@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/solid";
 import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 function Header() {
   const router = useRouter();
@@ -46,6 +47,9 @@ function Header() {
           url='https://media-exp1.licdn.com/dms/image/C5603AQF_ETUBUqItmA/profile-displayphoto-shrink_200_200/0/1555336290907?e=1624492800&v=beta&t=RA2GW98oBSqkX8nU66XT88H7GLGv4zyOh4Z1WUpruzQ'
         />
       </div>
+
+      {/* Header Option component */}
+      <HeaderOptions />
     </header>
   );
 }
